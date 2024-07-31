@@ -9,12 +9,23 @@
     <style type="text/css">
         * { font-family: Tahoma, sans-serif; }
         html, body { min-height:100%; min-width:100%; }
-        body { background-image: url("media/cisco.png"); background-repeat:no-repeat; *background:#112C52; }
+        body { background-image: url("media/cisco.png"); 
+				background-repeat:no-repeat;*background:#112C52; }
+			table, th, td {
+  				border: none;
+			}
+			th, td {
+ 				 padding: 10px;
+			}
+			table.center {
+  				margin-left: auto;
+  				margin-right: auto;
+			}	
         #box { padding:20px; margin:30px auto; max-width:800px; border:1px solid #000; text-align:center; border-radius:5px; }
         #fatBox { padding:30px; margin:30px auto; max-width:80%; border:2px solid #000; text-align:center; border-radius:5px; }
         a { color:#ACD4FF; }
         p { margin-top:10px; }
-        .blue { background-color:rgba(0, 30, 100, 1); color:#fff; }
+        .blue { background-color:rgba(0,30, 100, 1); color:#fff; }
         .red { background:#ff0000; color:#fff; }
         .yellow { background:#FFCE50; color:#000; }
         .whiteText { color:#fff; }
@@ -24,37 +35,35 @@
 </head>
 
 <body>
-        <div id="box" class="blue">
+	 
+    <div id="box" class="blue">
 			<p>
         <h1>Name That Sound!!</h1>
-        <p>Let's play a game.</p>
-        <p>Put on the headphones and follow the instructions below.</p>
+        <p><h3>Put on the headphones and follow the instructions below.</h3></p>
 			</p><br>
 			<img src="media/presidio.png" style="width:500px;height:150px;>
 			<br>
 	</div>
-	<div id="box2">
+	<div id="box2" class="blue">
 		<br><br>
 		<p>
-		Use the QR code below to open the Slido quiz on your phone.
+		<h3>Use the QR code below to open the Slido quiz on your phone.</h3>
 		</p>
 		<br><br>
 		<img src="media/QR_code.png">
 		<br><br>
 		<p>
-		Enter the passcode: Exchange25!<br>
-		Now, what's that sound!?
+		<h3>Use the passcode: Exchange25!</h3><br><br>
+		<h3>Now, what's that sound!?</h3><br>
 		</p>
-		<p>
-				<img src="media/one.png" style="width:50px;height:50px;>
-					<a href="media/01_Star_Spangled_Banner.mp3">First Sound</a> <br>
-				<img src="media/two.png" style="width:50px;height:50px;>
-					<a href="media/01_Star_Spangled_Banner.mp3">Second Sound</a> <br>
-				<a href="media/01_Star_Spangled_Banner.mp3">
-					<img src="media/three.png" style="width:50px;height:50px;>
-				</a> <br>		
-		</p>
-	</div>
-</body>
+		<table class="center">
+					<td><img src="media/one.png" style="width:50px;height:50px"></td>
+					<td><a href="media/01_Star_Spangled_Banner.mp3"> First Sound </a></td>
+					<td><img src="media/two.png" style="width:50px;height:50px"></td>
+					<td><a href="media/01_Star_Spangled_Banner.mp3"> Second Sound </a></td>
+					<td><img src="media/three.png" style="width:50px;height:50px"></td>
+					<td><a href="media/01_Star_Spangled_Banner.mp3"> Third Sound </a></td>
+		</table>
+		</div>
+		</body>
 </html>
-
