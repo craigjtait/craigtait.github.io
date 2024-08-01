@@ -5,6 +5,9 @@
     <title>Name That Sound!</title>
     
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline MP3 Player</title>
+    <link rel="stylesheet" href="styles.css">
 
     <style type="text/css">
         * { font-family: Tahoma, sans-serif; }
@@ -31,6 +34,12 @@
         .whiteText { color:#fff; }
         .blackText { color:#000; }
         #ocra { background: #44A08D; background: -webkit-linear-gradient(to right, #093637, #44A08D); background: linear-gradient(to right, #093637, #44A08D); }
+			.audio-player {
+   			margin: 20px 0;
+    			padding: 10px;
+   			border: 2px solid #ccc;
+   			border-radius: 5px;
+    			background-color: #f9f9f9;
     </style>
 </head>
 
@@ -40,27 +49,29 @@
 			<p>
         <h1>Name That Sound!!</h1>
         <p><h3>Put on the headphones and follow the instructions below.</h3></p>
-			</p><br>
+			</p>
+			<br>
 			<img src="media/presidio.png" style="width:500px;height:150px;>
 			<br>
 	</div>
 	<div id="box2" class="blue">
 		<br><br>
 		<p>
-			<h3>Use the QR code below to open the quiz on your phone.</h3>
+		<h3>Use the QR code below to open the Slido quiz on your phone.</h3>
 		</p>
 		<br><br>
 		<img src="media/QR_code.png">
 		<p>
-			<h3>Now, click below to hear the sounds and enter your answers in the quiz on your phone!</h3><br>
+		<h3>Use the passcode:  <span style="color:yellow">Exchange25!</span></h3><br><br>
+		<h3>Now, click below to hear the sounds and enter your answers in Slido!</h3><br>
 		</p>
 		<table class="center">
-					<td><img src="media/one.png" style="width:50px;height:50px"></td>
-					<td><a href="media/01_Star_Spangled_Banner.mp3"> First Sound </a></td>
-					<td><img src="media/two.png" style="width:50px;height:50px"></td>
-					<td><a href="media/01_Star_Spangled_Banner.mp3"> Second Sound </a></td>
-					<td><img src="media/three.png" style="width:50px;height:50px"></td>
-					<td><a href="media/01_Star_Spangled_Banner.mp3"> Third Sound </a></td>
+					<tr><td><img src="media/one.png" style="width:50px;height:50px"></td>
+					<td><div class="audio-player"><audio controls><source src="media/01_Star_Spangled_Banner.mp3" type="audio/mpeg"></audio></div></td></tr>
+					<tr><td><img src="media/two.png" style="width:50px;height:50px"></td>
+					<td><div class="audio-player"><audio controls><source src="media/01_Star_Spangled_Banner.mp3" type="audio/mpeg"></audio></div></td></tr>
+					<tr><td><img src="media/three.png" style="width:50px;height:50px"></td>
+					<td><div class="audio-player"><audio controls><source src="media/01_Star_Spangled_Banner.mp3" type="audio/mpeg"></audio></div></td></tr>
 		</table>
 		</div>
 		</body>
