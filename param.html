@@ -30,7 +30,7 @@
 
         // Redirection logic based on the parameter value
         if (paramValue) {
-            setTimeout(() => {
+            // setTimeout(() => {
                 switch(paramValue.toLowerCase()) {
                     case 'presidio_sound':
                         window.location.href = 'https://craigjtait.github.io?destination=presidio.html';
@@ -44,7 +44,7 @@
                     default:
                         document.getElementById('output').innerText += ' - No matching URL found for redirection.';
                 }
-            }, 2000); // Adding a delay of 2 seconds before redirection for demonstration purposes
+            }, // 2000); // Adding a delay of 2 seconds before redirection for demonstration purposes
         }
     </script>
 </body>
