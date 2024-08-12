@@ -23,11 +23,24 @@
         }
 
         // Example usage
-        let paramName = 'exampleParam'; // Change this to the parameter you want to parse
+        let paramName = 'destination'; // Change this to the parameter you want to parse
         let paramValue = getUrlParameter(paramName);
 
-        // Display the result on the HTML page
-        document.getElementById('output').innerText = `Value of "${paramName}": ${paramValue}`;
+        // Redirection logic based on the parameter value
+        if (paramValue) {
+            switch(paramValue.toLowerCase()) {
+                case 'presidio':
+                    window.location.href = 'https://craigjtait.github.io/presidio.html';
+                    break;
+                case 'bing':
+                    window.location.href = 'https://www.bing.com';
+                    break;
+                case 'yahoo':
+                    window.location.href = 'https://www.yahoo.com';
+                    break;
+                default:
+                    document.getElementById('output').innerText += ' - No matching URL found for redirection.';
+
     </script>
 </body>
 </html>
