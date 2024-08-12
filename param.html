@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Parameter Parser</title>
+    <title>URL Redirection Based on Parameter</title>
 </head>
 <body>
-    <h1>URL Parameter Parser</h1>
+    <h1>URL Redirection Based on Parameter</h1>
     <div id="output"></div>
 
     <script>
@@ -26,21 +26,27 @@
         let paramName = 'destination'; // Change this to the parameter you want to parse
         let paramValue = getUrlParameter(paramName);
 
+        // Display the result on the HTML page
+        document.getElementById('output').innerText = `Parameter "${paramName}": ${paramValue}`;
+
         // Redirection logic based on the parameter value
         if (paramValue) {
-            switch(paramValue.toLowerCase()) {
-                case 'presidio':
-                    window.location.href = 'https://craigjtait.github.io/presidio.html';
-                    break;
-                case 'bing':
-                    window.location.href = 'https://www.bing.com';
-                    break;
-                case 'yahoo':
-                    window.location.href = 'https://www.yahoo.com';
-                    break;
-                default:
-                    document.getElementById('output').innerText += ' - No matching URL found for redirection.';
-
+            setTimeout(() => {
+                switch(paramValue.toLowerCase()) {
+                    case 'google':
+                        window.location.href = 'https://www.google.com';
+                        break;
+                    case 'bing':
+                        window.location.href = 'https://www.bing.com';
+                        break;
+                    case 'yahoo':
+                        window.location.href = 'https://www.yahoo.com';
+                        break;
+                    default:
+                        document.getElementById('output').innerText += ' - No matching URL found for redirection.';
+                }
+            }, 2000); // Adding a delay of 2 seconds before redirection for demonstration purposes
+        }
     </script>
 </body>
 </html>
