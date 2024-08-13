@@ -3,36 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="media/favicon.png">
     <title>Help Widget</title>
-    <style>
+    <style type="text/css">
+	* { font-family: Tahoma, sans-serif; }
+        html, body { min-height:100%; min-width:100%; }
         body {
             margin: 0;
             width: 100%;
             height: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: left	;
+            align-items: left;
+			flex-direction: column;
             background-color: royalblue;
             color: white;
         }
-        .container {
+		.title, .box {
             width: 800px;
-            height: 600px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
         }
+        .title {
+            height: 100px;
+        }
+        .box {
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 800px;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <p>
-          <h1>Welcome to My Styled Page</h1>
-        </p>
-        <p>
-          <img src='media/QR_code.png'>
-        </p>
+    <div id="title" class="title">
+        		<h2>Report an issue with this room</h2>
+
+	</div>
+	<div id="qr" class="box">
+		<img src='media/QR_code1.png'>
+	</div>
+	<div id="text" class="title">
+		Is there something wrong with the current state of the meeting room? Let us know!
+        <br><br>
+		1. Scan the QR code with your mobile phone <br>
+		2. Follow the instructions on your mobile device <br>
+        3. We'll come fix it as soon as we can! <br>
+		Any problem? Call 888 867 5309
     </div>
 </body>
 </html>
