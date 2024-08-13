@@ -19,7 +19,7 @@
             	background-color: royalblue;
             	color: white;
         }
-	.title, .box {
+	.title, .box, .text {
             	width: 800px;
             	display: flex;
             	justify-content: center;
@@ -28,6 +28,10 @@
         }
         .title {
             	height: 75px;
+			padding: 20px;
+            	margin: 10px auto;
+            	max-width: 800px;
+            	border-radius: 3px;
         }
         .box {
             	padding: 20px;
@@ -36,6 +40,11 @@
             	border: 1px solid #999;
             	border-radius: 3px;
         }
+		.text {
+			padding: 20px;
+            	margin: 10px auto;
+            	max-width: 800px;
+            	border-radius: 3px;
     </style>
 </head>
 <body>
@@ -44,10 +53,11 @@
 
 	</div>
 	<div id="qr" class="box">
-		<img src='media/QR_code1.png'>
+		<img src='media/QR_code.png'>
 	</div>
-	<div id="text" class="title">
-		Is there something wrong with the current state of the meeting room? Let us know!
+	<div id="text" class="text">
+		Is there something wrong with the current state of the meeting room? <br>
+		Let us know!
         <br><br>
 		1. Scan the QR code with your mobile phone <br>
 		2. Follow the instructions on your mobile device <br>
