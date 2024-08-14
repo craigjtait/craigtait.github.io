@@ -23,7 +23,7 @@
   				margin-right: auto;
 			}	
         #box { padding:20px; margin:30px auto; border:1px solid #999; text-align:center; border-radius:5px; }
-        #fatBox { padding:30px; margin:30px auto; max-width:80%; border:2px solid #000; text-align:center; border-radius:5px; }
+        #fatBox { padding:30px; margin:30px auto; max-width: 100%; border:2px solid #000; text-align:center; border-radius:5px; }
         a { color:#ACD4FF; }
         p { margin-top:10px; }
         .blue { color:#fff; }
@@ -32,33 +32,47 @@
         .whiteText { color:#fff; }
         .blackText { color:#000; }
         #ocra { background: #44A08D; background: -webkit-linear-gradient(to right, #093637, #44A08D); background: linear-gradient(to right, #093637, #44A08D); }
-			.audio-player {
+	.audio-player {
    			margin: 20px 0;
     			padding: 10px;
    			border: 2px solid #ccc;
    			border-radius: 5px;
     			background-color: #f9f9f9;
+	}
+    .video-player {
+        margin: 20px 0;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        max-width: 100%;
+    }
+    .video-player video {
+        width: 100%;
+        height: auto;
+    }
+    .centered-image {
+        display: block;
+        margin: 0 auto;
+    }
     </style>
 </head>
-
 <body>
-	 
-    <div id="box" class="blue">
-			<p>
-        		<h1>Video Devices Help Videos</h1>
-        		<p><h3>Have questions about the new video devices? Check out the videos below!</h3></p>
-			</p>
-			<img src="media/anon.png" style="width:500px;height:150px;>
-			<br>
-	</div>
-	<div id="box2" class="blue">
-		<br><br>
-		<p>
-		<h3>Tap on the play button on screen to check out the new features</h3>
-		</p>
-		<br><br>
-		<h3>Now, click below to hear the sounds and enter your answers in the quiz on your phone!</h3><br>
-		</p>
-		<div class="video-player"><video controls><source src="media/HelpVideo.mov"></video></div>
-		</body>
+<div id="box2" class="blue">
+    <img src="media/anon.png" class="centered-image" style="width:800px;height:150px;">
+    <br><br>
+    <p>
+    <h3>Tap on the play button on screen to check out the new features</h3>
+    </p>
+    <br><br>
+    <h3>Now, click below to hear the sounds and enter your answers in the quiz on your phone!</h3><br>
+    </p>
+    <div class="video-player">
+        <video controls>
+            <source src="media/HelpVideo.mov" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+</body>
 </html>
