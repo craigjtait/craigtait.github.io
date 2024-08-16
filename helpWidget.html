@@ -50,6 +50,34 @@
             		location.reload();
         	}, 60000);
     	</script>
+	<script type="text/javascript">
+        // Function to refresh the page every 60 seconds (1 minute)
+        setInterval(function() {
+            location.reload();
+        }, 60000);
+
+        // Function to alternate display of "text" and "new" containers
+        function alternateDisplay() {
+            const textDiv = document.getElementById('text');
+            const newDiv = document.getElementById('new');
+
+            if (textDiv.style.display === 'none') {
+                textDiv.style.display = 'flex';
+                newDiv.style.display = 'none';
+            } else {
+                textDiv.style.display = 'none';
+                newDiv.style.display = 'flex';
+            }
+        }
+
+        // Initially hide the "new" container
+        window.onload = function() {
+            document.getElementById('new').style.display = 'none';
+
+            // Set interval to alternate display every 10 seconds
+            setInterval(alternateDisplay, 10000);
+        };
+    </script>
 </head>
 <body>
     	<div id="title" class="title">
@@ -67,6 +95,14 @@
 		2. Follow the instructions on your mobile device <br>
         	3. We'll come fix it as soon as we can! <br>
 		Any problem? Call 888 867 5309
+    </div>
+	<div id="new" class="text">
+		It's time to stretch and fetch from our Snack Bar! <br>
+        	<br><br>
+		No "In or Out" privileges. Once you have entered, you cannot leave and return without paying admission again.<br>
+		Lights out, please.<br>
+		We now accept cash or credit cards at all our theatres. No checks. There is no ATM at our theatres.<br>
+		Tobacco products and batteries are not sold at the drive-in. Come prepared in advance. <br>
     </div>
 </body>
 </html>
