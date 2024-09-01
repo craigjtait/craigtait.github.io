@@ -8,7 +8,6 @@
 </head>
 <body>
     <div id="output"></div>
-
     <script>
         // Function to get URL parameters
         function getUrlParameter(name) {
@@ -23,7 +22,7 @@
         }
 
         // Example usage
-        let paramName = 'destination'; // Change this to the parameter you want to parse
+        let paramName = 'dest'; // Change this to the parameter you want to parse
         let paramValue = getUrlParameter(paramName);
 
         // Display the result on the HTML page
@@ -46,7 +45,7 @@
                         window.location.href = 'https://craigjtait.github.io/helpVideo.html';
                         break;
                     default:
-                        document.getElementById('output').innerText += ' use the url param, desitnation = [helpVideo|helpWidget]';
+                        document.getElementById('output').innerText += ' Use the url param, dest = [helpVideo|helpWidget]';
                 }
             },  500); // Adding a delay of .5 seconds before redirection for demonstration purposes
         }
