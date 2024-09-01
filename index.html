@@ -15,7 +15,7 @@
             name = name.replace(/[\[\]]/g, '\\$&');
             let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
                 results = regex.exec(window.location.href);
-            
+
             if (!results) return null;
             if (!results[2]) return '';
             return decodeURIComponent(results[2].replace(/\+/g, ' '));
@@ -44,13 +44,16 @@
                     case 'helpvideo':
                         window.location.href = 'https://craigjtait.github.io/helpVideo.html';
                         break;
-                    case 'rotateImages':
+                    case 'rotateimages':
                         window.location.href = 'https://craigjtait.github.io/rotateImages.html';
                         break;
                     default:
-                        document.getElementById('output').innerText += ' Use the url param, dest = [helpvideo|helpwidget|rotateimages]';
+                        document.getElementById('output').innerText = 'Invalid parameter value. Use the URL param, dest = [helpvideo|helpwidget|rotateimages]';
                 }
-            },  500); // Adding a delay of .5 seconds before redirection for demonstration purposes
+            }, 500); // Adding a delay of 0.5 seconds before redirection for demonstration purposes
+        } else {
+            // Display a message when no parameter is provided
+            document.getElementById('output').innerText = 'No parameter provided. Use the URL param, dest = [helpvideo|helpwidget|rotateimages]';
         }
     </script>
 </body>
