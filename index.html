@@ -47,13 +47,16 @@
                     case 'rotateimages':
                         window.location.href = 'https://craigjtait.github.io/rotateImages.html';
                         break;
+                    case 'namethatsound':
+                        window.location.href = 'https://craigjtait.github.io/NameThatSound.html';
+                        break;
                     default:
                         document.getElementById('output').innerText = 'Invalid parameter value. Use the URL param, dest = [helpvideo &nbsp;|&nbsp; helpwidget &nbsp;|&nbsp; rotateimages]';
              }
             }, 500); // Adding a delay of 0.5 seconds before redirection for demonstration purposes
         } else {
             // Display a message when no parameter is provided
-            document.getElementById('output').innerText = 'No parameter provided. Use the URL param, dest = [helpvideo | helpwidget | rotateimages]';
+            document.getElementById('output').innerText = 'No parameter provided. Use the URL param, dest = [helpvideo | helpwidget | rotateimages | namethatsound]';
         }
     </script>
 </body>
