@@ -1,6 +1,6 @@
 ## craigjtait.github.io
 
-# Cisco Devices Web Engine Examples
+# Cisco Devices Web Engine Workshop
 
 This project contains examples of some ways to demo the web engine on Cisco RoomOS devices.
 
